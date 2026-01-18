@@ -1,13 +1,26 @@
 import { Folder, ExternalLink, Github } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
+//images
+import operativeSystemImg from '../assets/so-project.webp';
+import genericImg from '../assets/generic-project.jpeg';
+
 export function Projects() {
   const projects = [
+     {
+      title: 'Operative System Web',
+      description: 'Sistema operativo basado en la web con gestión de archivos, aplicaciones integradas y personalización del usuario.',
+      technologies: ['React', 'Node.js', 'TailwindCSS', 'TypeScript'],
+      image: operativeSystemImg,
+      link: 'https://so-simulation.netlify.app',
+      github: 'https://github.com/DuckyCoyote/SO-simulation',
+      color: 'bg-[#ffff00]',
+    },
     {
       title: 'E-Commerce Platform',
       description: 'Plataforma de comercio electrónico completa con carrito de compras, pagos integrados y panel de administración.',
       technologies: ['React', 'Node.js', 'Stripe', 'MongoDB'],
-      image: 'online shopping',
+      image: '',
       link: '#',
       github: '#',
       color: 'bg-[#00ff00]',
@@ -16,7 +29,7 @@ export function Projects() {
       title: 'Task Manager Pro',
       description: 'Aplicación de gestión de tareas con colaboración en tiempo real, notificaciones y análisis de productividad.',
       technologies: ['Next.js', 'Socket.io', 'PostgreSQL', 'Prisma'],
-      image: 'task management',
+      image: '',
       link: '#',
       github: '#',
       color: 'bg-[#00ffff]',
@@ -25,25 +38,16 @@ export function Projects() {
       title: 'Social Media Dashboard',
       description: 'Dashboard para gestión de múltiples redes sociales con análisis de métricas y programación de publicaciones.',
       technologies: ['Vue.js', 'Express', 'Redis', 'Chart.js'],
-      image: 'social media analytics',
+      image: '',
       link: '#',
       github: '#',
       color: 'bg-[#ff00ff]',
     },
     {
-      title: 'Weather App',
-      description: 'Aplicación del clima con pronósticos detallados, mapas interactivos y alertas personalizadas.',
-      technologies: ['React Native', 'OpenWeather API', 'Maps SDK'],
-      image: 'weather forecast',
-      link: '#',
-      github: '#',
-      color: 'bg-[#ffff00]',
-    },
-    {
       title: 'Portfolio Builder',
       description: 'Herramienta para crear portfolios profesionales sin código, con plantillas personalizables y hosting incluido.',
       technologies: ['React', 'Tailwind', 'Firebase', 'Vercel'],
-      image: 'portfolio website',
+      image: '',
       link: '#',
       github: '#',
       color: 'bg-[#ff6b6b]',
@@ -52,7 +56,7 @@ export function Projects() {
       title: 'Fitness Tracker',
       description: 'App para seguimiento de ejercicios, nutrición y objetivos fitness con gráficos de progreso.',
       technologies: ['Flutter', 'Firebase', 'HealthKit', 'Charts'],
-      image: 'fitness training',
+      image: '',
       link: '#',
       github: '#',
       color: 'bg-[#4ecdc4]',
@@ -79,10 +83,9 @@ export function Projects() {
 
               <div className="border-b-4 border-black h-48 bg-white overflow-hidden">
                 <ImageWithFallback
-                  src={`https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop`}
+                  src={`${project.image ? project.image : genericImg}`}
                   alt={project.title}
                   className="w-full h-full object-cover"
-                  query={project.image}
                 />
               </div>
 
@@ -105,7 +108,7 @@ export function Projects() {
                     href={project.link}
                     className="flex-1 border-4 border-black bg-black text-[#00ff00] px-3 py-2 font-bold hover:bg-[#00ff00] hover:text-black transition-colors flex items-center justify-center gap-2 text-sm"
                   >
-                    <ExternalLink size={16} />
+                    <ExternalLink size={16}/>
                     Ver
                   </a>
                   <a
