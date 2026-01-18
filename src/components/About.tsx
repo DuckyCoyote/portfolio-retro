@@ -19,7 +19,7 @@ export function About() {
           <div className="border-8 border-black bg-white p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
             <h3 className="text-2xl font-bold mb-4 pb-4 border-b-4 border-black">Mi Historia</h3>
             <p className="mb-4 text-lg">
-              Soy un desarrollador Full Stack con pasión por crear aplicaciones web modernas y funcionales. 
+              Soy Alejandro Daniel Cruz Hernandez, un desarrollador Full Stack con pasión por crear aplicaciones web modernas y funcionales. 
               Mi viaje en la programación comenzó hace más de 2 años, y desde entonces no he parado de aprender 
               y mejorar mis habilidades.
             </p>
