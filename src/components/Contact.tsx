@@ -250,7 +250,7 @@ export function Contact() {
               )}
               
               {submitStatus === 'error' && (
-                <div className="border-4 border-black bg-[#ff0000] text-white p-4 font-bold text-center">
+                <div className="border-4 border-black bg-[#ff0000] text-red p-4 font-bold text-center">
                   Error al enviar. Verifica que el mensaje sea válido.
                 </div>
               )}
