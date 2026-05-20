@@ -5,7 +5,7 @@ export function Experience() {
     {
       title: 'Full Stack Developer',
       company: 'Credibusiness',
-      period: 'Agosto 2025 - Enero 2026',
+      period: 'Mayo 2025 - Mayo 2026',
       description: 'Trabajo con equipo de desarrollo, arquitectura de aplicaciones escalables, y desarrollo de software.',
       technologies: ['Angular.Js', 'Node.js', 'AWS', 'MySQL'],
       color: 'bg-[#00ff00]',
@@ -13,7 +13,7 @@ export function Experience() {
     {
       title: 'Full Stack Developer',
       company: 'Hey Banco',
-      period: 'Septiembre 2024 - Agosto 2025',
+      period: 'Mayo 2024 - Mayo 2025',
       description: 'Desarrollo de aplicaciones web completas, implementación de APIs RESTful, y optimización de rendimiento.',
       technologies: ['Angular.Js', 'Spring Boot', 'PostgreSQL', 'Red Hat'],
       color: 'bg-[#00ffff]',
@@ -21,7 +21,7 @@ export function Experience() {
     {
       title: 'Full Stack Developer',
       company: 'AMX Contenido',
-      period: 'Marzo 2024 - Septiembre 2024',
+      period: 'Enero 2024 - Mayo 2024',
       description: 'Creación de interfaces de usuario interactivas, implementación de diseños responsive, y desarrollo de API REST.',
       technologies: ['React', 'TypeScript', 'Express.Js', 'MySQL'],
       color: 'bg-[#ff00ff]',

@@ -3,6 +3,7 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 
 //images
 import operativeSystemImg from '../assets/so-project.webp';
+import serverMonitoringImg from '../assets/server-manager.png';
 import genericImg from '../assets/generic-project.jpeg';
 
 export function Projects() {
@@ -17,12 +18,12 @@ export function Projects() {
       color: 'bg-[#ffff00]',
     },
     {
-      title: 'E-Commerce Platform',
-      description: 'Plataforma de comercio electrónico completa con carrito de compras, pagos integrados y panel de administración.',
-      technologies: ['React', 'Node.js', 'Stripe', 'MongoDB'],
-      image: '',
-      link: '#',
-      github: '#',
+      title: 'Server Monitoring Dashboard',
+      description: 'Dashboard para monitoreo de servidores en tiempo real con alertas y análisis de rendimiento.',
+      technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
+      image: serverMonitoringImg,
+      link: 'https://servermanagerfront.netlify.app',
+      github: 'https://github.com/DuckyCoyote/server-manager-front',
       color: 'bg-[#00ff00]',
     },
     {
